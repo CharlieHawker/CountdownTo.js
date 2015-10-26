@@ -39,3 +39,7 @@ Interval in milliseconds at which remaining time is recalculated (default: 500)
 
 ### `indexTimeUnitNameMap`
 The display units for each time unit that is calculated (default: `['years', 'months', 'days', 'hours', 'minutes', 'seconds']`)
+
+## Tests
+
+`npm test`

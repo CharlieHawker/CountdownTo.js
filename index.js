@@ -1,4 +1,4 @@
-(function() {
+module.exports = (function() {
 
   var defaults = {
     onCountdownBegin: function() {},
@@ -46,7 +46,7 @@
         Math.floor((r%(1000*60*60*24*30)) / (1000*60*60*24)), // days
         Math.floor((r%(1000*60*60*24)) / (1000*60*60)), // hours
         Math.floor((r%(1000*60*60)) / (1000*60)), // minutes
-        Math.floor((r%(1000*60)) / 1000); // seconds
+        Math.floor((r%(1000*60)) / 1000) // seconds
       ];
 
       c.options.onCalculateRemainingTime.call(c);
@@ -73,5 +73,6 @@
     return strs.join(' ');
   };
 
-  window.CountdownTo = CountdownTo;
+  return CountdownTo;
+
 })();

@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/countdown.to.svg)](https://badge.fury.io/js/countdown.to)
+[![Build Status](https://travis-ci.org/CharlieHawker/CountdownTo.js.svg?branch=master)](https://travis-ci.org/CharlieHawker/CountdownTo.js) [![npm version](https://badge.fury.io/js/countdown.to.svg)](https://badge.fury.io/js/countdown.to)
 
 # CountdownTo.js
 

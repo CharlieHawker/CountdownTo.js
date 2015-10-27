@@ -4,11 +4,20 @@ This is a simple vanilla javascript-based countdown timer.
 
 *N.B.* Not designed for anything other than simple displays, as it makes assumptions (365 days / year, 30 days / month, no leap year handling...)!
 
+## Installation
+
+```
+npm install countdown.to --save
+```
+
 
 ## Usage
 
 To create a new countdown timer targeting a specific date:
 ```
+// Require the module
+var CountdownTo = require('countdown.to');
+// Create a new timer
 var timer = new CountdownTo('2015-12-25 00:00:00');
 ```
 

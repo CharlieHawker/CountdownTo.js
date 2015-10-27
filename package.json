@@ -1,5 +1,5 @@
 {
-  "name": "countdownto.js",
+  "name": "countdown.to",
   "version": "0.1.0",
   "description": "A small countdown timer",
   "main": "index.js",

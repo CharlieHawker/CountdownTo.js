@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/countdown.to.svg)](https://badge.fury.io/js/countdown.to)
+
 # CountdownTo.js
 
 This is a simple vanilla javascript-based countdown timer.

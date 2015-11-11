@@ -1,5 +1,5 @@
 var assert = require('assert');
-    CountdownTo = require('../index'),
+    CountdownTo = require('../js/countdown.to'),
     t = (new Date()).getTime() + (1000 * 3600 * 24); // Tomorrow;
 
 describe('CountdownTo', function() {

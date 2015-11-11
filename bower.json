@@ -1,7 +1,7 @@
 {
   "name": "countdown.to",
   "description": "A small countdown timer",
-  "main": "index.js",
+  "main": "js/countdown.to.js",
   "authors": [
     "Charlie Hawker"
   ],

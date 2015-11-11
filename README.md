@@ -8,17 +8,26 @@ This is a simple vanilla javascript-based countdown timer.
 
 ## Installation
 
+**Node**
 ```
 npm install countdown.to --save
+```
+
+**Bower**
+```
+bower install countdown.to --save
 ```
 
 
 ## Usage
 
+*If* using node.js, require the module
+```
+var CountdownTo = require('countdown.to');
+```
+
 To create a new countdown timer targeting a specific date:
 ```
-// Require the module
-var CountdownTo = require('countdown.to');
 // Create a new timer
 var timer = new CountdownTo('2015-12-25 00:00:00');
 ```

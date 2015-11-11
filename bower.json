@@ -1,0 +1,26 @@
+{
+  "name": "countdown.to",
+  "description": "A small countdown timer",
+  "main": "index.js",
+  "authors": [
+    "Charlie Hawker"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "countdown",
+    "timer",
+    "count"
+  ],
+  "homepage": "https://github.com/CharlieHawker/countdownTo.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

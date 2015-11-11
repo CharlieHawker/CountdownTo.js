@@ -1,4 +1,4 @@
-module.exports = (function() {
+var CountdownTo = (function() {
 
   var defaults = {
     onCountdownBegin: function() {},
@@ -63,7 +63,7 @@ module.exports = (function() {
         hasDisplayedSomething = false,
         strs = [];
 
-    for (i in c.timeRemaining) {
+    for (var i=0; i<c.timeRemaining.length; i++) {
       if ( c.timeRemaining[i] > 0 || hasDisplayedSomething ) {
         strs.push(c.timeRemaining[i] + ' ' + c.options.indexTimeUnitNameMap[i]);
         hasDisplayedSomething = true;
@@ -74,5 +74,7 @@ module.exports = (function() {
   };
 
   return CountdownTo;
+}());
 
-})();
+if ( typeof module !== "undefined" )
+  module.exports = CountdownTo;

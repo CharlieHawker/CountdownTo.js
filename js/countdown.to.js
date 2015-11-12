@@ -8,20 +8,17 @@ var CountdownTo = (function() {
     indexTimeUnitNameMap: ['years', 'months', 'days', 'hours', 'minutes', 'seconds']
   };
 
-  Object.prototype.merge = function(object) {
-    var self = this;
-    for (var property in self) {
-      if ( self.hasOwnProperty(property) && object[property] === undefined )
-        object[property] = self[property];
-    }
-    return object;
-  };
 
   var CountdownTo = function(endTime, options) {
-    this.options = defaults.merge(options || {});
+    options = ( options || {});
+    this.options = defaults;
+    for (var optionName in this.options ) {
+      this.options[optionName] = ( options.hasOwnProperty(optionName) && options[optionName] !== undefined ) ? options[optionName] : defaults[optionName];
+    }
     this.endTime = (new Date(endTime)).getTime();
     this.init();
   };
+
 
   CountdownTo.prototype.init = function() {
     var c = this;

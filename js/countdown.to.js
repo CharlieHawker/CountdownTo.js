@@ -23,7 +23,7 @@ var CountdownTo = (function() {
   CountdownTo.prototype.init = function() {
     var c = this;
 
-    c.timeRemaining = Array(7).fill(0);
+    c.timeRemaining = [0,0,0,0,0,0,0];
     c.calculateTimeRemaining();
     c.options.onCountdownBegin.call(c);
     c.refreshInterval = setInterval(function() {
@@ -49,7 +49,7 @@ var CountdownTo = (function() {
       c.options.onCalculateRemainingTime.call(c);
     } else {
       clearInterval(c.refreshInterval);
-      c.timeRemaining = Array(7).fill(0);
+      c.timeRemaining = [0,0,0,0,0,0,0];
       c.options.onCountdownEnd.call(c);
     }
   };
